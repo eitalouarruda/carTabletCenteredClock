@@ -61,7 +61,7 @@ class OverlayService : Service() {
                     or WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
             PixelFormat.TRANSLUCENT
         )
-        params.gravity = Gravity.BOTTOM or Gravity.START
+        params.gravity = Gravity.TOP or Gravity.START
 
         windowManager.addView(overlayView, params)
 
